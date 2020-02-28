@@ -24,18 +24,17 @@ Run Project Locally: `yarn dev` or `yarn start`
 - Expo SDK 36
 - React Navigation v4
 - PropTypes
-- Prettier + [eslint-config-react-native-community](https://github.com/facebook/react-native/tree/master/packages/eslint-config-react-native-community)
+- Linting
 
 ## Linting
 
 - run: `yarn lint` for a list of linting warnings/error in cli
-- prettier and airbnb config
+- prettier and [react-native-community eslint config](https://github.com/facebook/react-native/tree/master/packages/eslint-config-react-native-community)
 - make sure you have prettier package installed:
   - [prettier for atom](https://atom.io/packages/prettier-atom)
   - [prettier for vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - then make sure to enable these options (packages → prettier):
   - eslint integration
-  - stylelint integration
   - automatic format on save (toggle format on save)
 
 ## Release Notes
