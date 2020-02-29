@@ -19,12 +19,6 @@
     "react/jsx-sort-props": "error",
     "react/no-multi-comp": "error",
     "react/sort-prop-types": "error",
-    "sort-imports": [
-      "error",
-      {
-        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
-      }
-    ],
     "sort-keys": "error",
     "sort-vars": "error"
   },
