@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { colors, gStyle } from '../constants';
 
 // grabs stacks
 import StackHome from './StackHome';
@@ -10,6 +11,10 @@ export default createBottomTabNavigator(
     StackMore
   },
   {
-    initialRouteName: 'StackHome'
+    initialRouteName: 'StackHome',
+    tabBarOptions: {
+      activeTintColor: colors.itemActive,
+      labelStyle: gStyle.navbarLabelStyle
+    }
   }
 );
