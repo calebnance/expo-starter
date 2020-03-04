@@ -26,6 +26,18 @@ export default {
     flex: 1
   },
 
+  // drop shadow
+  // ///////////////////////////////////////////////////////////////////////////
+  dropshadow: {
+    shadowColor: colors.black,
+    shadowOffset: {
+      height: 2,
+      width: 1
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 0
+  },
+
   // flex
   // ///////////////////////////////////////////////////////////////////////////
   flex1: { flex: 1 },
@@ -59,16 +71,21 @@ export default {
     justifyContent: 'space-between'
   },
 
-  // margins
+  // margin
   // ///////////////////////////////////////////////////////////////////////////
   mB1: { marginBottom: space1 },
   mB2: { marginBottom: space2 },
-  mB3: { marginBottom: space3 },
-  mB4: { marginBottom: space4 },
-
+  mH1: { marginHorizontal: space1 },
+  mH2: { marginHorizontal: space2 },
+  mL1: { marginLeft: space1 },
+  mL2: { marginLeft: space2 },
+  mR1: { marginRight: space1 },
+  mR2: { marginRight: space2 },
   mT1: { marginTop: space1 },
   mT2: { marginTop: space2 },
   mTHalf: { marginTop: spaceHalf },
+  mV1: { marginVertical: space1 },
+  mV2: { marginVertical: space2 },
 
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
@@ -97,12 +114,28 @@ export default {
   // navbar bottom
   // ///////////////////////////////////////////////////////////////////////////
   navbarLabelStyle: {
-    fontSize: 10,
+    fontSize: 12,
     marginBottom: device.iOS ? 0 : 16
   },
   navbarStyle: {
     borderTopColor: colors.black
   },
+
+  // padding
+  // ///////////////////////////////////////////////////////////////////////////
+  pB1: { paddingBottom: space1 },
+  pB2: { paddingBottom: space2 },
+  pH1: { paddingHorizontal: space1 },
+  pH2: { paddingHorizontal: space2 },
+  pL1: { paddingLeft: space1 },
+  pL2: { paddingLeft: space2 },
+  pR1: { paddingRight: space1 },
+  pR2: { paddingRight: space2 },
+  pT1: { paddingTop: space1 },
+  pT2: { paddingTop: space2 },
+  pTHalf: { paddingTop: spaceHalf },
+  pV1: { paddingVertical: space1 },
+  pV2: { paddingVertical: space2 },
 
   // spacers
   // ///////////////////////////////////////////////////////////////////////////
