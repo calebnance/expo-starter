@@ -90,8 +90,7 @@ export default {
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
   navHeaderContainerStyle: {
-    borderBottomColor: colors.black,
-    borderBottomWidth: 1
+    borderBottomColor: colors.black
   },
   navHeaderLeftRightStyle: {
     flex: 1,
@@ -111,13 +110,14 @@ export default {
     fontSize: 16
   },
 
-  // navbar bottom
+  // nav tab
   // ///////////////////////////////////////////////////////////////////////////
-  navbarLabelStyle: {
+  navTabLabelStyle: {
     fontSize: 12,
     marginBottom: device.iOS ? 0 : 16
   },
-  navbarStyle: {
+  navTabStyle: {
+    backgroundColor: colors.primary,
     borderTopColor: colors.black
   },
 

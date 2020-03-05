@@ -6,11 +6,10 @@ export default {
   black60: 'rgba(0, 0, 0, 0.6)',
   black80: 'rgba(0, 0, 0, 0.8)',
 
-  itemActive: '#3cc13a',
-  itemInactive: '#7e8e7e',
+  itemActive: '#bbe1fa',
+  itemInactive: '#3282b8',
 
-  mainBg: '#191919',
-  primary: '#3cc13a',
+  primary: '#0f4c75',
 
   white: '#fff'
 };
