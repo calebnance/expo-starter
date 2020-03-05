@@ -24,7 +24,7 @@ export default createStackNavigator(
   {
     navigationOptions: {
       tabBarIcon: Icon,
-      tabBarLabel: 'Home'
+      tabBarLabel: 'Home tab'
     }
   }
 );

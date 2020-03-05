@@ -14,7 +14,9 @@ export default createBottomTabNavigator(
     initialRouteName: 'StackHome',
     tabBarOptions: {
       activeTintColor: colors.itemActive,
-      labelStyle: gStyle.navbarLabelStyle
+      inactiveTintColor: colors.itemInactive,
+      labelStyle: gStyle.navTabLabelStyle,
+      style: gStyle.navTabStyle
     }
   }
 );
