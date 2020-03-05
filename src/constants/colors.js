@@ -6,7 +6,7 @@ export default {
   black60: 'rgba(0, 0, 0, 0.6)',
   black80: 'rgba(0, 0, 0, 0.8)',
 
-  itemActive: '#bbe1fa',
+  itemActive: '#fff',
   itemInactive: '#3282b8',
 
   primary: '#0f4c75',

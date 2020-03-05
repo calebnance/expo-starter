@@ -10,7 +10,6 @@ const Home = () => (
 
 Home.navigationOptions = {
   headerStyle: gStyle.navHeaderContainerStyle,
-  headerTitleContainerStyle: gStyle.navHeaderTitleContainerStyle,
   headerTitleStyle: gStyle.navHeaderTitleStyle,
   title: 'Home Header'
 };

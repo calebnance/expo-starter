@@ -92,19 +92,6 @@ export default {
   navHeaderContainerStyle: {
     borderBottomColor: colors.black
   },
-  navHeaderLeftRightStyle: {
-    flex: 1,
-    height: 36,
-    justifyContent: 'center',
-    paddingHorizontal: 12,
-    width: 64
-  },
-  navHeaderTitleContainerStyle: {
-    alignItems: 'center',
-    flex: 2,
-    height: 36,
-    justifyContent: 'center'
-  },
   navHeaderTitleStyle: {
     color: colors.black,
     fontSize: 16
