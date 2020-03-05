@@ -28,7 +28,7 @@
     "react/jsx-props-no-multi-spaces": "error",
     "react/jsx-sort-props": "error",
     "react/jsx-uses-vars": "error",
-    "react/no-multi-comp": "error",
+    "react/no-multi-comp": ["error", { "ignoreStateless": true }],
     "react/no-unsafe": "error",
     "react/no-unused-prop-types": "error",
     "react/no-unused-state": "error",
