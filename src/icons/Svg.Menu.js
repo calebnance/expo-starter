@@ -4,9 +4,9 @@ import Svg, { Path } from 'react-native-svg';
 import { colors } from '../constants';
 
 const SvgMenu = ({ active, size }) => (
-  <Svg height={size} viewBox="0 0 24 24" width={size}>
+  <Svg height={size} viewBox="0 0 32 32" width={size}>
     <Path
-      d="M21 11H3c-.6 0-1 .4-1 1s.4 1 1 1h18c.6 0 1-.4 1-1s-.4-1-1-1zM3 7h18c.6 0 1-.4 1-1s-.4-1-1-1H3c-.6 0-1 .4-1 1s.4 1 1 1zM21 17H3c-.6 0-1 .4-1 1s.4 1 1 1h18c.6 0 1-.4 1-1s-.4-1-1-1z"
+      d="M4 17.333h24c.736 0 1.333-.597 1.333-1.333s-.597-1.333-1.333-1.333H4c-.736 0-1.333.597-1.333 1.333S3.264 17.333 4 17.333zm0-8h24c.736 0 1.333-.597 1.333-1.333S28.736 6.667 28 6.667H4c-.736 0-1.333.597-1.333 1.333S3.264 9.333 4 9.333zm0 16h24c.736 0 1.333-.597 1.333-1.333s-.597-1.333-1.333-1.333H4c-.736 0-1.333.597-1.333 1.333S3.264 25.333 4 25.333z"
       fill={active ? colors.itemActive : colors.itemInactive}
     />
   </Svg>
