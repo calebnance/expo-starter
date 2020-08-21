@@ -1,5 +1,4 @@
 import colors from './colors';
-import device from './device';
 
 // define space grid
 // /////////////////////////////////////////////////////////////////////////////
@@ -101,7 +100,7 @@ export default {
   // ///////////////////////////////////////////////////////////////////////////
   navTabLabelStyle: {
     fontSize: 12,
-    marginBottom: device.iOS ? 0 : 16
+    marginBottom: 0
   },
   navTabStyle: {
     backgroundColor: colors.primary,
