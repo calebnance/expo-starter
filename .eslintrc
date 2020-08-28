@@ -1,49 +1,17 @@
 {
-  "extends": ["@react-native-community", "prettier"],
-  "parser": "babel-eslint",
-  "plugins": ["prettier", "react", "import"],
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
-    "import/no-unresolved": ["error", { "commonjs": true, "amd": true }],
-    "no-duplicate-imports": "error",
-    "no-underscore-dangle": "error",
-    "no-unused-vars": [
-      "error",
-      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
-    ],
-    "no-use-before-define": 0,
-
     "prettier/prettier": ["error"],
-
-    "react/default-props-match-prop-types": "error",
-    "react/destructuring-assignment": [1, "always"],
-    "react/forbid-prop-types": [
-      "error",
-      {
-        "forbid": ["any"]
-      }
-    ],
-    "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
-    "react/jsx-no-undef": "error",
-    "react/jsx-no-useless-fragment": "error",
-    "react/jsx-props-no-multi-spaces": "error",
-    "react/jsx-sort-props": "error",
-    "react/jsx-uses-vars": "error",
-    "react/no-multi-comp": ["error", { "ignoreStateless": true }],
-    "react/no-unsafe": "error",
-    "react/no-unused-prop-types": "error",
-    "react/no-unused-state": "error",
-    "react/require-default-props": "error",
-    "react/sort-comp": "error",
-    "react/sort-prop-types": "error",
-
-    "sort-keys": "error",
-    "sort-vars": "error"
+    "no-use-before-define": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "globals": {
-    "__DEV__": "off",
-    "describe": "off",
-    "expect": "off",
-    "it": "off",
-    "jest": "off"
+    "__DEV__": "readonly",
+    "describe": "readonly",
+    "expect": "readonly",
+    "it": "readonly",
+    "jest": "readonly"
   }
 }
