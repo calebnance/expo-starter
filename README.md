@@ -22,6 +22,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 ## Features
 
 - Expo SDK 39
+- iOS, Android and PWA (Progressive Web App)
 - React Navigation v4
 - Linting
 - PropTypes
