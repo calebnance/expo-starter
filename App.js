@@ -5,10 +5,10 @@ import { StatusBar } from 'react-native';
 import RootStack from './src/navigation/RootStack';
 
 const App = () => (
-  <>
-    <StatusBar barStyle="dark-content" />
+  <React.Fragment>
+    <StatusBar barStyle="default" />
     <RootStack />
-  </>
+  </React.Fragment>
 );
 
 export default App;
