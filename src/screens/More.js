@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
-import { Linking } from 'expo';
+import * as Linking from 'expo-linking';
 import { gStyle } from '../constants';
 
 // components
