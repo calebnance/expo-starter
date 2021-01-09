@@ -6,7 +6,7 @@ import RootStack from './src/navigation/RootStack';
 
 const App = () => (
   <React.Fragment>
-    <StatusBar barStyle="default" />
+    <StatusBar barStyle="dark-content" />
     <RootStack />
   </React.Fragment>
 );
