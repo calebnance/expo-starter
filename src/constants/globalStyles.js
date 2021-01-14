@@ -89,10 +89,13 @@ export default {
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
   navHeaderContainerStyle: {
+    backgroundColor: colors.primary,
     borderBottomColor: colors.black
+    // next line removes shadow from navbar header
+    // shadowColor: 'transparent'
   },
   navHeaderTitleStyle: {
-    color: colors.black,
+    color: colors.white,
     fontSize: 16
   },
 
