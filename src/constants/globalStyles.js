@@ -86,30 +86,6 @@ export default {
   mV1: { marginVertical: space1 },
   mV2: { marginVertical: space2 },
 
-  // navbar header
-  // ///////////////////////////////////////////////////////////////////////////
-  navHeaderContainerStyle: {
-    backgroundColor: colors.primary,
-    borderBottomColor: colors.black
-    // next line removes shadow from navbar header
-    // shadowColor: 'transparent'
-  },
-  navHeaderTitleStyle: {
-    color: colors.white,
-    fontSize: 16
-  },
-
-  // nav tab
-  // ///////////////////////////////////////////////////////////////////////////
-  navTabLabelStyle: {
-    fontSize: 12,
-    marginBottom: 0
-  },
-  navTabStyle: {
-    backgroundColor: colors.primary,
-    borderTopColor: colors.black
-  },
-
   // padding
   // ///////////////////////////////////////////////////////////////////////////
   pB1: { paddingBottom: space1 },
@@ -134,5 +110,34 @@ export default {
   spacer2: { height: space2 },
   spacer3: { height: space3 },
   spacer4: { height: space4 },
-  spacer8: { height: space8 }
+  spacer8: { height: space8 },
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // react navigation (v.4) specific styling
+  // v.4 docs: https://reactnavigation.org/docs/4.x/getting-started
+  // ///////////////////////////////////////////////////////////////////////////
+
+  // navbar header
+  // ///////////////////////////////////////////////////////////////////////////
+  navHeaderContainerStyle: {
+    backgroundColor: colors.primary,
+    borderBottomColor: colors.black
+    // next line removes shadow from navbar header
+    // shadowColor: 'transparent'
+  },
+  navHeaderTitleStyle: {
+    color: colors.white,
+    fontSize: 16
+  },
+
+  // nav tab
+  // ///////////////////////////////////////////////////////////////////////////
+  navTabLabelStyle: {
+    fontSize: 12,
+    marginBottom: 0
+  },
+  navTabStyle: {
+    backgroundColor: colors.primary,
+    borderTopColor: colors.black
+  }
 };
