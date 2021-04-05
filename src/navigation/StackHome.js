@@ -1,30 +1,22 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import { gStyle } from '../constants';
 
 // screens
 import HomeScreen from '../screens/Home';
 
-// icons
-import SvgHome from '../icons/Svg.Home';
+const Stack = createStackNavigator();
 
-const Icon = ({ focused }) => <SvgHome active={focused} />;
-
-Icon.propTypes = {
-  // required
-  focused: PropTypes.bool.isRequired
-};
-
-export default createStackNavigator(
-  {
-    Home: {
-      screen: HomeScreen
-    }
-  },
-  {
-    navigationOptions: {
-      tabBarIcon: Icon,
-      tabBarLabel: 'Home tab'
-    }
-  }
+export default () => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name="Home"
+      component={HomeScreen}
+      options={{
+        headerStyle: gStyle.navHeaderContainerStyle,
+        headerTitleStyle: gStyle.navHeaderTitleStyle,
+        title: 'Home tab'
+      }}
+    />
+  </Stack.Navigator>
 );

@@ -1,22 +1,52 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { colors, gStyle } from '../constants';
 
-// tab navigation
-import TabNavigation from './TabNavigation';
+// stacks
+import StackHome from './StackHome';
+import StackMore from './StackMore';
 
-const StackNavigator = createStackNavigator(
-  {
-    Main: {
-      screen: TabNavigation
-    }
-  },
-  {
-    headerMode: 'none',
-    initialRouteName: 'Main'
-  }
+// icons
+import SvgHome from '../icons/Svg.Home';
+import SvgMenu from '../icons/Svg.Menu';
+
+const Tab = createBottomTabNavigator();
+
+export default () => (
+  <NavigationContainer>
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ color, focused, size }) => {
+          let icon = <SvgHome active={focused} />;
+
+          if (route.name === 'StackMore') {
+            icon = <SvgMenu active={focused} />;
+          }
+
+          return icon;
+        }
+      })}
+      tabBarOptions={{
+        activeTintColor: colors.itemActive,
+        inactiveTintColor: colors.itemInactive,
+        style: gStyle.navTabStyle
+      }}
+    >
+      <Tab.Screen
+        name="StackHome"
+        component={StackHome}
+        options={{
+          tabBarLabel: 'Home'
+        }}
+      />
+      <Tab.Screen
+        name="StackMore"
+        component={StackMore}
+        options={{
+          tabBarLabel: 'More'
+        }}
+      />
+    </Tab.Navigator>
+  </NavigationContainer>
 );
-
-// app container
-const App = createAppContainer(StackNavigator);
-
-export default App;
