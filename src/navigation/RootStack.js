@@ -17,11 +17,11 @@ export default () => (
   <NavigationContainer>
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarIcon: ({ color, focused, size }) => {
-          let icon = <SvgHome active={focused} />;
+        tabBarIcon: ({ color }) => {
+          let icon = <SvgHome fill={color} />;
 
           if (route.name === 'StackMore') {
-            icon = <SvgMenu active={focused} />;
+            icon = <SvgMenu fill={color} />;
           }
 
           return icon;
