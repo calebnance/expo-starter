@@ -15,7 +15,7 @@ export default () => (
       options={{
         headerStyle: gStyle.navHeaderContainerStyle,
         headerTitleStyle: gStyle.navHeaderTitleStyle,
-        title: 'Home tab'
+        title: 'Home'
       }}
     />
   </Stack.Navigator>
