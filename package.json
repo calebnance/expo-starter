@@ -30,7 +30,6 @@
     "expo-app-loading": "^1.0.1",
     "expo-asset": "^8.2.1",
     "expo-font": "^8.4.0",
-    "expo-linking": "~2.0.0",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
