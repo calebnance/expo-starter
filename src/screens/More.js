@@ -11,7 +11,7 @@ const More = () => (
 const styles = StyleSheet.create({
   text: {
     fontSize: 14,
-    fontWeight: '300'
+    fontWeight: '400'
   }
 });
 

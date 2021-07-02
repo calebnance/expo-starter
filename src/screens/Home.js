@@ -11,7 +11,7 @@ const Home = () => (
 const styles = StyleSheet.create({
   text: {
     fontSize: 14,
-    fontWeight: '600'
+    fontWeight: '400'
   }
 });
 
