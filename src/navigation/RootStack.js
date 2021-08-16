@@ -17,6 +17,9 @@ export default () => (
   <NavigationContainer>
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerShown: false,
+        tabBarActiveTintColor: colors.itemActive,
+        tabBarInactiveTintColor: colors.itemInactive,
         tabBarIcon: ({ color }) => {
           let icon = <SvgHome fill={color} />;
 
@@ -25,13 +28,9 @@ export default () => (
           }
 
           return icon;
-        }
+        },
+        tabBarStyle: gStyle.navTabStyle
       })}
-      tabBarOptions={{
-        activeTintColor: colors.itemActive,
-        inactiveTintColor: colors.itemInactive,
-        style: gStyle.navTabStyle
-      }}
     >
       <Tab.Screen
         name="StackHome"
