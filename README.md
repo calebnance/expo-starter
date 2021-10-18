@@ -1,6 +1,6 @@
-# [template] Expo Quick Prototype
+# [template] Expo Starter
 
-web demo: [Expo Quick Prototype](https://expo-quick-prototype.vercel.app)
+web demo: [Expo Starter](https://expo-quick-prototype.vercel.app)
 
 [![follow @calebnance](https://img.shields.io/twitter/follow/calebnance.svg?style=for-the-badge&logo=TWITTER&logoColor=FFFFFF&labelColor=00aced&logoWidth=20&color=lightgray)](https://twitter.com/calebnance)
 

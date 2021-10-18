@@ -1,7 +1,7 @@
 {
-  "name": "expo-quick-prototype",
+  "name": "expo-starter",
   "version": "0.0.1",
-  "description": "quick prototype template for expo/react native",
+  "description": "quick prototyping starter template for expo/react native",
   "author": "Caleb Nance",
   "license": "MIT",
   "keywords": [
