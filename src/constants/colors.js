@@ -7,9 +7,9 @@ export default {
   black80: 'rgba(0, 0, 0, 0.8)',
 
   itemActive: '#ffffff',
-  itemInactive: '#3282b8',
+  itemInactive: '#8dc3b1',
 
-  primary: '#0f4c75',
+  primary: '#30778c',
 
   white: '#ffffff'
 };
