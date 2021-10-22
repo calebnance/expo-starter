@@ -38,6 +38,12 @@ Run Project Locally: `yarn dev` or `yarn start`
   - eslint integration
   - automatic format on save (toggle format on save)
 
+**Update Linting Packages:**
+
+```
+yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-import-helpers eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-native prettier --dev
+```
+
 ## Release Notes
 
 ### version 0.0.1 (current)
