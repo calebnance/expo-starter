@@ -2,7 +2,7 @@
   "expo": {
     "name": "Expo Starter",
     "slug": "expo-starter",
-    "privacy": "public",
+    "privacy": "hidden",
     "version": "0.0.1",
     "platforms": ["android", "ios", "web"],
     "githubUrl": "https://github.com/calebnance/expo-starter",
