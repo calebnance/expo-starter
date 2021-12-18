@@ -21,7 +21,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ## Features
 
-- Expo SDK 43
+- Expo SDK 44
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - Linting
@@ -48,6 +48,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 ### version 0.0.1 (current)
 
+- upgraded to [Expo SDK 44](https://blog.expo.dev/expo-sdk-44-4c4b8306584a)
 - upgraded to [Expo SDK 43](https://blog.expo.dev/expo-sdk-43-aa9b3c7d5541)
 - upgraded to [React Navigation v6](https://reactnavigation.org/docs/getting-started)
 - upgraded to [Expo SDK 42](https://blog.expo.io/expo-sdk-42-579aee2348b6)
