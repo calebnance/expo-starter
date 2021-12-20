@@ -6,6 +6,9 @@ import { func } from './src/constants';
 // root stack navigation
 import RootStack from './src/navigation/RootStack';
 
+// app context state
+import AppState from './src/context/AppState';
+
 class App extends React.Component {
   constructor() {
     super();
@@ -31,11 +34,11 @@ class App extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <AppState>
         <StatusBar barStyle="light-content" />
 
         <RootStack />
-      </React.Fragment>
+      </AppState>
     );
   }
 }
