@@ -11,6 +11,9 @@ const space1 = spaceGrid;
 const space2 = spaceGrid * 2;
 const space3 = spaceGrid * 3;
 const space4 = spaceGrid * 4;
+const space5 = spaceGrid * 5;
+const space6 = spaceGrid * 6;
+const space7 = spaceGrid * 7;
 const space8 = spaceGrid * 8;
 const space12 = spaceGrid * 12;
 const space16 = spaceGrid * 16;
@@ -72,17 +75,22 @@ export default {
 
   // margin
   // ///////////////////////////////////////////////////////////////////////////
+  mBHalf: { marginBottom: spaceHalf },
   mB1: { marginBottom: space1 },
   mB2: { marginBottom: space2 },
+  mHHalf: { marginHorizontal: spaceHalf },
   mH1: { marginHorizontal: space1 },
   mH2: { marginHorizontal: space2 },
+  mLHalf: { marginLeft: spaceHalf },
   mL1: { marginLeft: space1 },
   mL2: { marginLeft: space2 },
+  mRHalf: { marginRight: spaceHalf },
   mR1: { marginRight: space1 },
   mR2: { marginRight: space2 },
+  mTHalf: { marginTop: spaceHalf },
   mT1: { marginTop: space1 },
   mT2: { marginTop: space2 },
-  mTHalf: { marginTop: spaceHalf },
+  mVHalf: { marginVertical: spaceHalf },
   mV1: { marginVertical: space1 },
   mV2: { marginVertical: space2 },
 
@@ -105,24 +113,26 @@ export default {
   // spacers
   // ///////////////////////////////////////////////////////////////////////////
   spacer1: { height: space1 },
+  spacer1W: { width: space1 },
+  spacer2: { height: space2 },
+  spacer2W: { width: space2 },
+  spacer3: { height: space3 },
+  spacer3W: { width: space3 },
+  spacer4: { height: space4 },
+  spacer4W: { width: space4 },
+  spacer5: { height: space5 },
+  spacer6: { height: space6 },
+  spacer7: { height: space7 },
+  spacer8: { height: space8 },
   spacer12: { height: space12 },
   spacer16: { height: space16 },
-  spacer2: { height: space2 },
-  spacer3: { height: space3 },
-  spacer4: { height: space4 },
-  spacer8: { height: space8 },
-
-  // ///////////////////////////////////////////////////////////////////////////
-  // react navigation (v.4) specific styling
-  // v.4 docs: https://reactnavigation.org/docs/4.x/getting-started
-  // ///////////////////////////////////////////////////////////////////////////
 
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
   navHeaderContainerStyle: {
     backgroundColor: colors.primary,
     borderBottomColor: colors.black
-    // next line removes shadow from navbar header
+    // next line removes navbar header bottom border
     // shadowColor: 'transparent'
   },
   navHeaderTitleStyle: {
