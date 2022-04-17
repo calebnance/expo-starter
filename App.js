@@ -9,38 +9,29 @@ import RootStack from './src/navigation/RootStack';
 // app context state
 import AppState from './src/context/AppState';
 
-class App extends React.Component {
-  constructor() {
-    super();
+const App = () => {
+  const [isLoading, setIsLoading] = React.useState(true);
 
-    this.state = {
-      isLoading: true
-    };
-  }
-
-  render() {
-    const { isLoading } = this.state;
-
-    if (isLoading) {
-      return (
-        <AppLoading
-          onError={() => {
-            // console.warn
-          }}
-          onFinish={() => this.setState({ isLoading: false })}
-          startAsync={func.loadAssetsAsync}
-        />
-      );
-    }
-
+  // pre-loading assets/fonts?
+  if (isLoading) {
     return (
-      <AppState>
-        <StatusBar barStyle="light-content" />
-
-        <RootStack />
-      </AppState>
+      <AppLoading
+        onError={() => {
+          // console.warn
+        }}
+        onFinish={() => setIsLoading(false)}
+        startAsync={func.loadAssetsAsync}
+      />
     );
   }
-}
+
+  return (
+    <AppState>
+      <StatusBar barStyle="light-content" />
+
+      <RootStack />
+    </AppState>
+  );
+};
 
 export default App;

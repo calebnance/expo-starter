@@ -10,6 +10,7 @@ const HeaderRight = ({ icon, onPress, text }) => (
     style={[gStyle.flexRowAlignCenter, gStyle.pR2]}
   >
     {text && <Text>{text}</Text>}
+
     {icon && <View style={gStyle.mL1}>{icon}</View>}
   </TouchableOpacity>
 );

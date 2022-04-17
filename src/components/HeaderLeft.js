@@ -10,6 +10,7 @@ const HeaderLeft = ({ icon, onPress, text }) => (
     style={[gStyle.flexRowAlignCenter, gStyle.pL2]}
   >
     {icon && <View style={gStyle.mR1}>{icon}</View>}
+
     {text && <Text>{text}</Text>}
   </TouchableOpacity>
 );

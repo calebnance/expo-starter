@@ -20,13 +20,23 @@ export default () => (
     <Stack.Screen
       name="More"
       component={MoreScreen}
-      options={{
-        headerLeft: () => <HeaderLeft icon={<SvgGithub />} />,
-        headerRight: () => <HeaderRight icon={<SvgMoreHorizontal />} />,
+      options={({ navigation }) => ({
+        headerLeft: () => (
+          <HeaderLeft
+            icon={<SvgGithub />}
+            onPress={() => navigation.navigate('ModalGitHub')}
+          />
+        ),
+        headerRight: () => (
+          <HeaderRight
+            icon={<SvgMoreHorizontal />}
+            onPress={() => navigation.navigate('ModalMoreOptions')}
+          />
+        ),
         headerStyle: gStyle.navHeaderContainerStyle,
         headerTitleStyle: gStyle.navHeaderTitleStyle,
         title: 'More'
-      }}
+      })}
     />
   </Stack.Navigator>
 );

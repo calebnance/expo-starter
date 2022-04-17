@@ -24,7 +24,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 - Expo SDK 44
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
-- [Context](https://reactjs.org/docs/context.html)
+- [React Context](https://reactjs.org/docs/context.html)
 - Linting
 - [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
@@ -47,18 +47,28 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 ## Release Notes
 
-### version 0.0.1 (current)
+**version 1.0.0 (current)**
 
-- added Context for main App State
+- added two modal examples: Full screen and fade-in/slide-in half modal card
+- added [React Context](https://reactjs.org/docs/context.html) for main App state
 - upgraded to [Expo SDK 44](https://blog.expo.dev/expo-sdk-44-4c4b8306584a)
 - upgraded to [Expo SDK 43](https://blog.expo.dev/expo-sdk-43-aa9b3c7d5541)
+
+**version 0.3.0**
+
 - upgraded to [React Navigation v6](https://reactnavigation.org/docs/getting-started)
 - upgraded to [Expo SDK 42](https://blog.expo.io/expo-sdk-42-579aee2348b6)
 - upgraded to [Expo SDK 41](https://blog.expo.io/expo-sdk-41-12cc5232f2ef)
+
+**version 0.2.0**
+
 - upgraded to [React Navigation v5](https://reactnavigation.org/docs/5.x/getting-started)
 - upgraded to [Expo SDK 40](https://blog.expo.io/expo-sdk-40-is-now-available-d4d73e67da33)
 - upgraded to [Expo SDK 39](https://blog.expo.io/expo-sdk-39-is-now-available-4c10aa825e3f)
 - upgraded to [Expo SDK 38](https://blog.expo.io/expo-sdk-38-is-now-available-ab6cd30ca2ee)
+
+**version 0.1.0**
+
 - upgraded to [Expo SDK 37](https://blog.expo.io/expo-sdk-37-is-now-available-dd5770f066a6)
 - started with [React Navigation v4](https://reactnavigation.org/docs/4.x/getting-started)
 - started with [Expo SDK 36](https://blog.expo.io/expo-sdk-36-is-now-available-b91897b437fe)

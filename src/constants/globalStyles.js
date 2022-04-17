@@ -96,6 +96,8 @@ export default {
 
   // padding
   // ///////////////////////////////////////////////////////////////////////////
+  p1: { padding: space1 },
+  p2: { padding: space2 },
   pB1: { paddingBottom: space1 },
   pB2: { paddingBottom: space2 },
   pH1: { paddingHorizontal: space1 },
