@@ -4,7 +4,7 @@ import {
   CardStyleInterpolators,
   createStackNavigator
 } from '@react-navigation/stack';
-import { colors, gStyle } from '../constants';
+import { colors, gStyle, themes } from '../constants';
 
 // tab navigation
 import TabNavigation from './TabNavigation';
@@ -19,6 +19,9 @@ import HeaderLeft from '../components/HeaderLeft';
 // icons
 import SvgChevronLeft from '../icons/Svg.ChevronLeft';
 
+// context
+import Context from '../context';
+
 const Stack = createStackNavigator();
 
 const forFade = ({ current }) => ({
@@ -27,48 +30,56 @@ const forFade = ({ current }) => ({
   }
 });
 
-export default () => (
-  <NavigationContainer>
-    <Stack.Navigator
-      screenOptions={{
-        cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
-        presentation: 'modal'
-      }}
-    >
-      <Stack.Screen
-        name="TabNavigation"
-        component={TabNavigation}
-        options={{
-          headerShown: false
-        }}
-      />
+export default () => {
+  // get main app state
+  const { theme } = React.useContext(Context);
 
-      <Stack.Screen
-        name="ModalGitHub"
-        component={ModalGitHub}
-        options={({ navigation }) => ({
-          headerLeft: () => (
-            <HeaderLeft
-              icon={<SvgChevronLeft fill={colors.white} />}
-              onPress={() => navigation.goBack()}
-            />
-          ),
-          headerStyle: gStyle.navHeaderContainerStyle,
-          headerTitle: 'Modal',
-          headerTitleStyle: gStyle.navHeaderTitleStyle
-        })}
-      />
+  // set current theming
+  const { navHeaderStyle } = themes[theme];
 
-      <Stack.Screen
-        name="ModalMoreOptions"
-        component={ModalMoreOptions}
-        options={{
-          cardStyleInterpolator: forFade,
-          gestureEnabled: false,
-          headerShown: false,
-          presentation: 'transparentModal'
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+          presentation: 'modal'
         }}
-      />
-    </Stack.Navigator>
-  </NavigationContainer>
-);
+      >
+        <Stack.Screen
+          name="TabNavigation"
+          component={TabNavigation}
+          options={{
+            headerShown: false
+          }}
+        />
+
+        <Stack.Screen
+          name="ModalGitHub"
+          component={ModalGitHub}
+          options={({ navigation }) => ({
+            headerLeft: () => (
+              <HeaderLeft
+                icon={<SvgChevronLeft fill={colors.white} />}
+                onPress={() => navigation.goBack()}
+              />
+            ),
+            headerStyle: navHeaderStyle,
+            headerTitle: 'Modal',
+            headerTitleStyle: gStyle.navHeaderTitleStyle
+          })}
+        />
+
+        <Stack.Screen
+          name="ModalMoreOptions"
+          component={ModalMoreOptions}
+          options={{
+            cardStyleInterpolator: forFade,
+            gestureEnabled: false,
+            headerShown: false,
+            presentation: 'transparentModal'
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};

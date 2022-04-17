@@ -7,12 +7,22 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import { colors, device, gStyle } from '../constants';
+import { colors, device, gStyle, themes } from '../constants';
 
 // icons
 import SvgClose from '../icons/Svg.Close';
 
+// context
+import Context from '../context';
+
 const ModalMoreOptions = ({ navigation }) => {
+  // get main app state
+  const { theme } = React.useContext(Context);
+
+  // set current theming
+  const { background, text } = themes[theme];
+
+  // animation
   const animationDuration = 400;
   const bottomDefault = -600;
   const bottom = React.useRef(new Animated.Value(bottomDefault)).current;
@@ -49,9 +59,13 @@ const ModalMoreOptions = ({ navigation }) => {
         style={styles.backdrop}
       />
 
-      <Animated.View style={[styles.containerModal, { bottom }]}>
+      <Animated.View
+        style={[styles.containerModal, { bottom, backgroundColor: background }]}
+      >
         <View style={gStyle.flexRowSpace}>
-          <Text style={styles.header}>Half Modal Example</Text>
+          <Text style={[styles.header, { color: text }]}>
+            Half Modal Example
+          </Text>
 
           <TouchableOpacity
             activeOpacity={gStyle.activeOpacity}
@@ -65,7 +79,9 @@ const ModalMoreOptions = ({ navigation }) => {
 
         <View style={gStyle.spacer2} />
 
-        <Text style={styles.text}>Fade In and Slide In Example</Text>
+        <Text style={[styles.text, { color: text }]}>
+          Fade In and Slide In Example
+        </Text>
       </Animated.View>
     </View>
   );
@@ -98,7 +114,6 @@ const styles = StyleSheet.create({
   },
   containerModal: {
     ...gStyle.p2,
-    backgroundColor: colors.white,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     paddingBottom: device.iPhoneNotch ? 48 : 24,

@@ -1,4 +1,4 @@
-# [template] Expo Starter
+# Expo Starter [template] 
 
 web demo: [Expo Starter](https://expo-quick-prototype.vercel.app)
 
@@ -25,6 +25,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - [React Context](https://reactjs.org/docs/context.html)
+- Dark Mode (with preference stored via [AsyncStorage](https://github.com/react-native-async-storage/async-storage))
 - Linting
 - [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 

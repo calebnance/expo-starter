@@ -10,6 +10,16 @@ export default {
   itemInactive: '#8dc3b1',
 
   primary: '#30778c',
+  primaryDark: '#225362',
+
+  background: '#eaf1f4',
+  backgroundDark: '#191919',
+
+  borderColor: '#d6e4e8',
+  borderColorDark: '#133038',
+
+  text: '#191919',
+  textDark: '#eeeeee',
 
   white: '#ffffff'
 };

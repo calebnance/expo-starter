@@ -1,22 +1,33 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { gStyle } from '../constants';
+import { gStyle, themes } from '../constants';
 
 // screens
 import HomeScreen from '../screens/Home';
 
+// context
+import Context from '../context';
+
 const Stack = createStackNavigator();
 
-export default () => (
-  <Stack.Navigator>
-    <Stack.Screen
-      name="Home"
-      component={HomeScreen}
-      options={{
-        headerStyle: gStyle.navHeaderContainerStyle,
-        headerTitleStyle: gStyle.navHeaderTitleStyle,
-        title: 'Home'
-      }}
-    />
-  </Stack.Navigator>
-);
+export default () => {
+  // get main app state
+  const { theme } = React.useContext(Context);
+
+  // set current theming
+  const { navHeaderStyle } = themes[theme];
+
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          headerStyle: navHeaderStyle,
+          headerTitleStyle: gStyle.navHeaderTitleStyle,
+          title: 'Home'
+        }}
+      />
+    </Stack.Navigator>
+  );
+};

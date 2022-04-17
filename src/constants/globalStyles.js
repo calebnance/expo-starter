@@ -133,9 +133,8 @@ export default {
   // ///////////////////////////////////////////////////////////////////////////
   navHeaderContainerStyle: {
     backgroundColor: colors.primary,
-    borderBottomColor: colors.black
-    // next line removes navbar header bottom border
-    // shadowColor: 'transparent'
+    borderBottomColor: colors.black,
+    shadowColor: 'transparent' // navbar header bottom border
   },
   navHeaderTitleStyle: {
     color: colors.white,
@@ -147,9 +146,5 @@ export default {
   navTabLabelStyle: {
     fontSize: 12,
     marginBottom: 0
-  },
-  navTabStyle: {
-    backgroundColor: colors.primary,
-    borderTopColor: colors.black
   }
 };

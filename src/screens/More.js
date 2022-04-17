@@ -1,17 +1,49 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { gStyle } from '../constants';
+import { StyleSheet, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { gStyle, themes } from '../constants';
 
-const More = () => (
-  <View style={[gStyle.flex1, gStyle.flexCenter]}>
-    <Text style={styles.text}>More Screen</Text>
-  </View>
-);
+// components
+import LineItemSwitch from '../components/LineItemSwitch';
+import SectionHeading from '../components/SectionHeading';
+
+// context
+import Context from '../context';
+
+const More = () => {
+  // get main app state
+  const { theme, updateState } = React.useContext(Context);
+
+  // set current theming
+  const { background } = themes[theme];
+
+  const toggleDarkMode = async () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+
+    // set new theme preference
+    await AsyncStorage.setItem('theme', JSON.stringify(newTheme));
+
+    // update main state
+    updateState('theme', newTheme);
+  };
+
+  return (
+    <View style={[styles.container, { backgroundColor: background }]}>
+      <SectionHeading text="Options" />
+
+      <LineItemSwitch
+        onPress={toggleDarkMode}
+        text="Dark mode"
+        selected={theme === 'dark'}
+      />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 14,
-    fontWeight: '400'
+  container: {
+    ...gStyle.flex1,
+    ...gStyle.p2
   }
 });
 
