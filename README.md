@@ -25,7 +25,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - [React Context](https://reactjs.org/docs/context.html)
-- Dark Mode (with preference stored via [AsyncStorage](https://github.com/react-native-async-storage/async-storage))
+- Dark mode (with preference stored via [AsyncStorage](https://github.com/react-native-async-storage/async-storage))
 - Linting
 - [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
@@ -50,6 +50,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- added Dark mode support
 - added two modal examples: Full screen and fade-in/slide-in half modal card
 - added [React Context](https://reactjs.org/docs/context.html) for main App state
 - upgraded to [Expo SDK 44](https://blog.expo.dev/expo-sdk-44-4c4b8306584a)
