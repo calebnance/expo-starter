@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import {
+  DarkTheme,
+  DefaultTheme,
+  NavigationContainer
+} from '@react-navigation/native';
 import {
   CardStyleInterpolators,
   createStackNavigator
@@ -38,7 +42,7 @@ export default () => {
   const { navHeaderStyle } = themes[theme];
 
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={theme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack.Navigator
         screenOptions={{
           cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,

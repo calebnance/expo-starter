@@ -12,7 +12,7 @@ export default {
     },
     tabBarStyle: {
       backgroundColor: colors.primary,
-      borderTopColor: colors.black
+      borderTopColor: colors.primary
     }
   },
   dark: {
@@ -26,7 +26,7 @@ export default {
     },
     tabBarStyle: {
       backgroundColor: colors.primaryDark,
-      borderTopColor: colors.white
+      borderTopColor: colors.primaryDark
     }
   }
 };
