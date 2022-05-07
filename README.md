@@ -21,7 +21,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ## Features
 
-- Expo SDK 44
+- Expo SDK 45
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - [React Context](https://reactjs.org/docs/context.html)
@@ -50,6 +50,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- upgraded to [Expo SDK 45](https://blog.expo.dev/expo-sdk-45-f4e332954a68)
 - added Dark mode support
 - added two modal examples: Full screen and fade-in/slide-in half modal card
 - added [React Context](https://reactjs.org/docs/context.html) for main App state

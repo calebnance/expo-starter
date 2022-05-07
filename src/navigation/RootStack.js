@@ -4,10 +4,8 @@ import {
   DefaultTheme,
   NavigationContainer
 } from '@react-navigation/native';
-import {
-  CardStyleInterpolators,
-  createStackNavigator
-} from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import { colors, gStyle, themes } from '../constants';
 
 // tab navigation
@@ -26,13 +24,7 @@ import SvgChevronLeft from '../icons/Svg.ChevronLeft';
 // context
 import Context from '../context';
 
-const Stack = createStackNavigator();
-
-const forFade = ({ current }) => ({
-  cardStyle: {
-    opacity: current.progress
-  }
-});
+const Stack = createNativeStackNavigator();
 
 export default () => {
   // get main app state
@@ -45,7 +37,6 @@ export default () => {
     <NavigationContainer theme={theme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack.Navigator
         screenOptions={{
-          cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
           presentation: 'modal'
         }}
       >
@@ -77,7 +68,7 @@ export default () => {
           name="ModalMoreOptions"
           component={ModalMoreOptions}
           options={{
-            cardStyleInterpolator: forFade,
+            animation: 'fade',
             gestureEnabled: false,
             headerShown: false,
             presentation: 'transparentModal'

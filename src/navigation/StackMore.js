@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { gStyle, themes } from '../constants';
 
 // screens
@@ -16,7 +16,7 @@ import SvgMoreHorizontal from '../icons/Svg.MoreHorizontal';
 // context
 import Context from '../context';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default () => {
   // get main app state

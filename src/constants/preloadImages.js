@@ -1,8 +1,7 @@
 // local images
 // /////////////////////////////////////////////////////////////////////////////
 
-// add image asset requires here
-// const someImageName = require('../assets/images/someImageName.[extension]');
-
-// then add them to the obj below
-export default {};
+// add local image assets you want to cache here
+export default {
+  salyWave: require('../assets/images/saly-wave.png')
+};
