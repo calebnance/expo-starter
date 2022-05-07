@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { gStyle, themes } from '../constants';
+import { fonts, gStyle, themes } from '../constants';
 
 // context
 import Context from '../context';
@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <View style={[styles.container, { backgroundColor: background }]}>
       <Text style={[styles.text, { color: text }]}>Home Screen</Text>
+      <Text style={[styles.text, { color: text }]}>with Custom Font</Text>
     </View>
   );
 };
@@ -25,8 +26,9 @@ const styles = StyleSheet.create({
     ...gStyle.flexCenter
   },
   text: {
-    fontSize: 14,
-    fontWeight: '400'
+    fontFamily: fonts.rubikRegular,
+    fontSize: 18,
+    lineHeight: 26
   }
 });
 

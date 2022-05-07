@@ -2,5 +2,6 @@
 // /////////////////////////////////////////////////////////////////////////////
 
 export default {
-  // someFontName: 'someFontName'
+  rubikBold: 'rubikBold',
+  rubikRegular: 'rubikRegular'
 };
