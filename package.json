@@ -16,7 +16,9 @@
     "start": "expo start",
     "lint": "eslint ./src",
     "android": "expo start --android",
+    "android-bundle": "eas build --platform android",
     "ios": "expo start --ios",
+    "ios-bundle": "eas build --platform ios",
     "web": "expo start --web",
     "web-build": "expo build:web",
     "eject": "expo eject"
