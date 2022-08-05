@@ -1,4 +1,4 @@
-# Expo Starter [template] 
+# Expo Starter [template]
 
 web demo: [Expo Starter](https://expo-quick-prototype.vercel.app)
 
@@ -15,13 +15,21 @@ web demo: [Expo Starter](https://expo-quick-prototype.vercel.app)
 
 First, make sure you have Expo CLI installed: `npm install -g expo-cli`
 
-Install: `yarn` or `yarn install`
+**Install:**
 
-Run Project Locally: `yarn dev` or `yarn start`
+```bash
+yarn
+```
+
+**Run Project Locally:**
+
+```bash
+yarn dev
+```
 
 ## Features
 
-- Expo SDK 45
+- Expo SDK 46
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - [React Context](https://reactjs.org/docs/context.html)
@@ -50,6 +58,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- upgraded to [Expo SDK 46](https://blog.expo.dev/expo-sdk-46-c2a1655f63f7)
 - upgraded to [Expo SDK 45](https://blog.expo.dev/expo-sdk-45-f4e332954a68)
 - added Dark mode support
 - added two modal examples: Full screen and fade-in/slide-in half modal card
