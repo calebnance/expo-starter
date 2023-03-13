@@ -26,7 +26,7 @@ import Context from '../context';
 
 const Stack = createNativeStackNavigator();
 
-export default () => {
+function RootStack() {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -77,4 +77,6 @@ export default () => {
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
+}
+
+export default RootStack;

@@ -10,7 +10,7 @@ import SectionHeading from '../components/SectionHeading';
 // context
 import Context from '../context';
 
-const More = () => {
+function More() {
   // get main app state
   const { theme, updateState } = React.useContext(Context);
 
@@ -38,7 +38,7 @@ const More = () => {
       />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

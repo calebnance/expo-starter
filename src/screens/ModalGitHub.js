@@ -5,7 +5,7 @@ import { gStyle, images, themes } from '../constants';
 // context
 import Context from '../context';
 
-const ModalGitHub = () => {
+function ModalGitHub() {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -25,7 +25,7 @@ const ModalGitHub = () => {
       <Image source={images.salyWave} style={styles.image} />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

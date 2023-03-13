@@ -15,7 +15,7 @@ import SvgClose from '../icons/Svg.Close';
 // context
 import Context from '../context';
 
-const ModalMoreOptions = ({ navigation }) => {
+function ModalMoreOptions({ navigation }) {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -85,7 +85,7 @@ const ModalMoreOptions = ({ navigation }) => {
       </Animated.View>
     </View>
   );
-};
+}
 
 ModalMoreOptions.propTypes = {
   // required

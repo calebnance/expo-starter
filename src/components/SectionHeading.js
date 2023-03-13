@@ -6,7 +6,7 @@ import { themes } from '../constants';
 // context
 import Context from '../context';
 
-const SectionHeading = ({ text }) => {
+function SectionHeading({ text }) {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -14,7 +14,7 @@ const SectionHeading = ({ text }) => {
   const { text: textColor } = themes[theme];
 
   return <Text style={[styles.heading, { color: textColor }]}>{text}</Text>;
-};
+}
 
 SectionHeading.propTypes = {
   // required

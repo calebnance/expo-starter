@@ -5,7 +5,7 @@ import { fonts, gStyle, themes } from '../constants';
 // context
 import Context from '../context';
 
-const Home = () => {
+function Home() {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -18,7 +18,7 @@ const Home = () => {
       <Text style={[styles.text, { color: text }]}>with Custom Font</Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

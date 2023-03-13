@@ -15,7 +15,7 @@ import Context from '../context';
 
 const Tab = createBottomTabNavigator();
 
-export default () => {
+function TabNavigation() {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -56,4 +56,6 @@ export default () => {
       />
     </Tab.Navigator>
   );
-};
+}
+
+export default TabNavigation;

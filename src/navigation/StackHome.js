@@ -10,7 +10,7 @@ import Context from '../context';
 
 const Stack = createNativeStackNavigator();
 
-export default () => {
+function StackHome() {
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -30,4 +30,6 @@ export default () => {
       />
     </Stack.Navigator>
   );
-};
+}
+
+export default StackHome;
