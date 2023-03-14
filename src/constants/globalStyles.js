@@ -131,20 +131,8 @@ export default {
 
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
-  navHeaderContainerStyle: {
-    backgroundColor: colors.primary,
-    borderBottomColor: colors.black,
-    shadowColor: 'transparent' // navbar header bottom border
-  },
   navHeaderTitleStyle: {
     color: colors.white,
     fontSize: 16
-  },
-
-  // nav tab
-  // ///////////////////////////////////////////////////////////////////////////
-  navTabLabelStyle: {
-    fontSize: 12,
-    marginBottom: 0
   }
 };

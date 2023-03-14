@@ -8,7 +8,7 @@ function HeaderRight({ icon, onPress, text }) {
     <TouchableOpacity
       activeOpacity={gStyle.activeOpacity}
       onPress={onPress}
-      style={[gStyle.flexRowAlignCenter, gStyle.pR2]}
+      style={gStyle.flexRowAlignCenter}
     >
       {text && <Text>{text}</Text>}
 

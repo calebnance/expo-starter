@@ -8,7 +8,7 @@ function HeaderLeft({ icon, onPress, text }) {
     <TouchableOpacity
       activeOpacity={gStyle.activeOpacity}
       onPress={onPress}
-      style={[gStyle.flexRowAlignCenter, gStyle.pL2]}
+      style={gStyle.flexRowAlignCenter}
     >
       {icon && <View style={gStyle.mR1}>{icon}</View>}
 
