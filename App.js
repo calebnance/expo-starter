@@ -11,7 +11,7 @@ import AppState from './src/context/AppState';
 
 SplashScreen.preventAutoHideAsync();
 
-const App = () => {
+function App() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -50,6 +50,6 @@ const App = () => {
       <View onLayout={onLayoutRootView} />
     </AppState>
   );
-};
+}
 
 export default App;
