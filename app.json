@@ -26,6 +26,7 @@
       "package": "com.domain.appname",
       "permissions": [],
       "versionCode": 100
-    }
+    },
+    "plugins": ["expo-font"]
   }
 }

@@ -58,6 +58,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- upgraded to [Expo SDK 50](https://expo.dev/changelog/2024/01-18-sdk-50)
 - upgraded to [Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
 - upgraded to [Expo SDK 48](https://blog.expo.dev/expo-sdk-48-ccb8302e231)
 - upgraded to [Expo SDK 47](https://blog.expo.dev/expo-sdk-47-a0f6f5c038af)
