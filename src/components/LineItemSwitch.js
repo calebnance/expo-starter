@@ -6,7 +6,9 @@ import { colors, device, gStyle, themes } from '../constants';
 // context
 import Context from '../context';
 
-function LineItemSwitch({ border, icon, onPress, selected, text }) {
+function LineItemSwitch(props) {
+  const { border = true, icon = null, onPress, selected = false, text } = props;
+
   // get main app state
   const { theme } = React.useContext(Context);
 
@@ -37,12 +39,6 @@ function LineItemSwitch({ border, icon, onPress, selected, text }) {
     </TouchableOpacity>
   );
 }
-
-LineItemSwitch.defaultProps = {
-  border: true,
-  icon: null,
-  selected: false
-};
 
 LineItemSwitch.propTypes = {
   // required

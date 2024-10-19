@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Svg, { Path } from 'react-native-svg';
 import { colors } from '../constants';
 
-function SvgChevronLeft({ fill, size }) {
+function SvgChevronLeft({ fill = colors.black, size = 24 }) {
   return (
     <Svg height={size} viewBox="0 0 32 32" width={size}>
       <Path
@@ -13,11 +13,6 @@ function SvgChevronLeft({ fill, size }) {
     </Svg>
   );
 }
-
-SvgChevronLeft.defaultProps = {
-  fill: colors.black,
-  size: 24
-};
 
 SvgChevronLeft.propTypes = {
   // optional

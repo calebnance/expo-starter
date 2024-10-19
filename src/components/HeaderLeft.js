@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { gStyle } from '../constants';
 
-function HeaderLeft({ icon, onPress, text }) {
+function HeaderLeft({ icon = null, onPress = () => null, text = null }) {
   return (
     <TouchableOpacity
       activeOpacity={gStyle.activeOpacity}
@@ -16,12 +16,6 @@ function HeaderLeft({ icon, onPress, text }) {
     </TouchableOpacity>
   );
 }
-
-HeaderLeft.defaultProps = {
-  icon: null,
-  onPress: () => null,
-  text: null
-};
 
 HeaderLeft.propTypes = {
   // optional

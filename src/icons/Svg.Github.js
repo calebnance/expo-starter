@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Svg, { Path } from 'react-native-svg';
 import { colors } from '../constants';
 
-function SvgGithub({ fill, size }) {
+function SvgGithub({ fill = colors.white, size = 24 }) {
   return (
     <Svg height={size} viewBox="0 0 32 32" width={size}>
       <Path
@@ -13,11 +13,6 @@ function SvgGithub({ fill, size }) {
     </Svg>
   );
 }
-
-SvgGithub.defaultProps = {
-  fill: colors.white,
-  size: 24
-};
 
 SvgGithub.propTypes = {
   // optional

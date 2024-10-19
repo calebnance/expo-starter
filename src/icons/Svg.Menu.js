@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Svg, { Path } from 'react-native-svg';
 import { colors } from '../constants';
 
-function SvgMenu({ fill, size }) {
+function SvgMenu({ fill = colors.black, size = 24 }) {
   return (
     <Svg height={size} viewBox="0 0 32 32" width={size}>
       <Path
@@ -13,11 +13,6 @@ function SvgMenu({ fill, size }) {
     </Svg>
   );
 }
-
-SvgMenu.defaultProps = {
-  fill: colors.black,
-  size: 24
-};
 
 SvgMenu.propTypes = {
   // optional
