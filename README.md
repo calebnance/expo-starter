@@ -29,7 +29,7 @@ yarn dev
 
 ## Features
 
-- Expo SDK 49
+- Expo SDK 51
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v6
 - [React Context](https://reactjs.org/docs/context.html)
@@ -58,6 +58,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- upgraded to [Expo SDK 51](https://expo.dev/changelog/2024/05-07-sdk-51)
 - upgraded to [Expo SDK 50](https://expo.dev/changelog/2024/01-18-sdk-50)
 - upgraded to [Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
 - upgraded to [Expo SDK 48](https://blog.expo.dev/expo-sdk-48-ccb8302e231)

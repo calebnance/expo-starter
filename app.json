@@ -27,6 +27,6 @@
       "permissions": [],
       "versionCode": 100
     },
-    "plugins": ["expo-font"]
+    "plugins": ["expo-asset", "expo-font"]
   }
 }
