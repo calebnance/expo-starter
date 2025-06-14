@@ -1,0 +1,31 @@
+{
+  "context": [
+    "This is an Expo-based React Native project using JavaScript.",
+    "Uses Expo SDK 53, React 19, and React Native 0.79.3.",
+    "UI and navigation are built using React Navigation v7 with native stack and bottom tabs.",
+    "Animations use Reanimated v3 and Gesture Handler.",
+    "Common packages include AsyncStorage, SVG, and SafeAreaContext.",
+    "Project follows the Airbnb ESLint style with Prettier formatting.",
+    "All components are written as functional components using React hooks.",
+    "Linting rules enforce no inline styles, sorted styles, and destructured props.",
+    "Imports follow the 'eslint-plugin-import-helpers' convention.",
+    "Main components and screens live under the 'src/' directory.",
+    "Assets are managed using 'expo-asset' and fonts through 'expo-font'."
+  ],
+  "rules": [
+    "Use arrow functions for all components and handlers.",
+    "Destructure props immediately in the function parameter.",
+    "Do not use inline styles; use StyleSheet.create instead.",
+    "Group React hooks at the top of functional components.",
+    "Sort style properties alphabetically inside StyleSheet.create.",
+    "Avoid using default exports; use named exports only.",
+    "Use single quotes and avoid trailing commas (per Prettier config).",
+    "Organize imports by module groups, following import-helpers rules.",
+    "Wrap screen content in <ScrollView> only when overflow is expected.",
+    "Do not use console logs in committed code.",
+    "If animations are needed, use Reanimated and gesture handler where possible.",
+    "Use PropTypes for props validation when possible.",
+    "Apply Expo's 'StatusBar' component for screen-level status bar config.",
+    "All comments is all lowercased and concise."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontSize": 13,
+  "prettier.semi": true,
+  "editor.scrollBeyondLastLine": false,
+  "search.mode": "reuseEditor"
+}
