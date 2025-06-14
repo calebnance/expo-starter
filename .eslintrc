@@ -26,6 +26,7 @@
       "asc",
       { "ignoreClassNames": true, "ignoreStyleProperties": false }
     ],
+    "local-rules/alphabetize-import-specifiers": "error",
     "local-rules/lowercase-comments": "error"
   },
   "globals": {

@@ -33,7 +33,10 @@ const loadAssetsAsync = async () => {
 
 // wait/sleep function
 // /////////////////////////////////////////////////////////////////////////////
-const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+const wait = (ms) =>
+  new Promise((r) => {
+    setTimeout(r, ms);
+  });
 
 export default {
   cacheFonts,
