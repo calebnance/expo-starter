@@ -1,58 +1,41 @@
-import React from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // context
 import Context from './index';
 
-class AppState extends React.Component {
-  constructor() {
-    super();
+function AppState({ children }) {
+  const [theme, setTheme] = useState('light');
 
-    this.state = {
-      theme: 'light'
+  // load theme from asyncstorage on mount
+  useEffect(() => {
+    const loadTheme = async () => {
+      const storedTheme =
+        JSON.parse(await AsyncStorage.getItem('theme')) || 'light';
+      setTheme(storedTheme);
     };
+    loadTheme();
+  }, []);
 
-    this.updateState = this.updateState.bind(this);
-  }
+  // updatestate function (stable reference)
+  const updateState = useCallback((key, value) => {
+    if (key === 'theme') {
+      setTheme(value);
+    }
+    // add more keys if more state is added in the future
+  }, []);
 
-  componentDidMount() {
-    this.checkLocalStorage();
-  }
+  // memoize context value to avoid unnecessary re-renders
+  const contextValue = useMemo(
+    () => ({
+      theme,
+      updateState
+    }),
+    [theme, updateState]
+  );
 
-  async checkLocalStorage() {
-    // get local storage
-    const theme = JSON.parse(await AsyncStorage.getItem('theme')) || 'light';
-
-    // update app state with any local storage
-    this.setState({
-      theme
-    });
-  }
-
-  updateState(key, value) {
-    this.setState({
-      [key]: value
-    });
-  }
-
-  render() {
-    const { children } = this.props;
-
-    // app state
-    const { theme } = this.state;
-
-    return (
-      <Context.Provider
-        value={{
-          theme,
-          updateState: this.updateState
-        }}
-      >
-        {children}
-      </Context.Provider>
-    );
-  }
+  return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 }
 
 AppState.propTypes = {
