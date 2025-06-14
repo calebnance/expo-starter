@@ -20,13 +20,21 @@
       "buildNumber": "1.0.0",
       "bundleIdentifier": "com.domain.appname",
       "requireFullScreen": false,
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.domain.appname",
       "permissions": [],
       "versionCode": 100
     },
-    "plugins": ["expo-asset", "expo-font"]
+    "plugins": ["expo-asset", "expo-font"],
+    "extra": {
+      "eas": {
+        "projectId": "d40b4a5a-44a9-41f4-91d2-33f5076e9f79"
+      }
+    }
   }
 }
