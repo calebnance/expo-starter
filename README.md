@@ -29,9 +29,9 @@ yarn dev
 
 ## Features
 
-- Expo SDK 51
+- Expo SDK 53
 - iOS, Android and PWA (Progressive Web App)
-- React Navigation v6
+- React Navigation v7
 - [React Context](https://reactjs.org/docs/context.html)
 - Dark mode (with preference stored via [AsyncStorage](https://github.com/react-native-async-storage/async-storage))
 - Linting
@@ -58,6 +58,8 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 1.0.0 (current)**
 
+- upgraded to [Expo SDK 53](https://expo.dev/changelog/sdk-53)
+- upgraded to [React Navigation v7](https://reactnavigation.org/docs/getting-started)
 - upgraded to [Expo SDK 51](https://expo.dev/changelog/2024/05-07-sdk-51)
 - upgraded to [Expo SDK 50](https://expo.dev/changelog/2024/01-18-sdk-50)
 - upgraded to [Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
@@ -73,7 +75,7 @@ yarn add @babel/core eslint-config-airbnb eslint-config-prettier eslint-plugin-i
 
 **version 0.3.0**
 
-- upgraded to [React Navigation v6](https://reactnavigation.org/docs/getting-started)
+- upgraded to [React Navigation v6](https://reactnavigation.org/docs/6.x/getting-started)
 - upgraded to [Expo SDK 42](https://blog.expo.io/expo-sdk-42-579aee2348b6)
 - upgraded to [Expo SDK 41](https://blog.expo.io/expo-sdk-41-12cc5232f2ef)
 
