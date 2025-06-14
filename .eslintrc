@@ -1,11 +1,12 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "plugin:local-rules/all"],
   "parser": "babel-eslint",
   "plugins": [
     "prettier",
     "react",
     "react-native",
-    "eslint-plugin-import-helpers"
+    "eslint-plugin-import-helpers",
+    "local-rules"
   ],
   "rules": {
     "prettier/prettier": ["error"],
@@ -24,7 +25,8 @@
       "error",
       "asc",
       { "ignoreClassNames": true, "ignoreStyleProperties": false }
-    ]
+    ],
+    "local-rules/lowercase-comments": "error"
   },
   "globals": {
     "__DEV__": "readonly",
