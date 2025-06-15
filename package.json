@@ -1,6 +1,6 @@
 {
   "name": "expo-starter",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "starter template for expo/react native app",
   "author": "Caleb Nance",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "ios-bundle": "eas build --platform ios",
     "ios-deploy": "eas build --platform ios --profile production --auto-submit",
     "eas-update": "eas update --channel production",
+    "eas-update-ios": "eas update --platform ios --branch production",
     "web": "expo start --web",
     "web-build": "expo build:web",
     "eject": "expo eject"

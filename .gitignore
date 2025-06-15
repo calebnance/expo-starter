@@ -4,6 +4,8 @@ node_modules/**/*
 npm-debug.*
 web-build/
 web-report/
+dist/
+build/
 
 *.jks
 *.p8

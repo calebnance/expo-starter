@@ -16,6 +16,7 @@ function Home() {
     <View style={[styles.container, { backgroundColor: background }]}>
       <Text style={[styles.text, { color: text }]}>Home Screen</Text>
       <Text style={[styles.text, { color: text }]}>with Custom Font</Text>
+      <Text style={[styles.text, { color: text }]}>with EAS Updates</Text>
     </View>
   );
 }

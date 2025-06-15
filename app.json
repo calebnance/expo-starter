@@ -4,7 +4,7 @@
     "scheme": "expostarter",
     "slug": "expostarter",
     "privacy": "hidden",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "platforms": ["android", "ios", "web"],
     "githubUrl": "https://github.com/calebnance/expo-starter",
     "orientation": "portrait",
@@ -17,7 +17,7 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "buildNumber": "1.0.1",
+      "buildNumber": "1.0.3",
       "bundleIdentifier": "com.calebnance.expostarter",
       "requireFullScreen": false,
       "supportsTablet": true,
@@ -28,7 +28,7 @@
     "android": {
       "package": "com.calebnance.expostarter",
       "permissions": [],
-      "versionCode": 101
+      "versionCode": 103
     },
     "plugins": ["expo-asset", "expo-font"],
     "extra": {
