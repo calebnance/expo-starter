@@ -19,6 +19,7 @@
     "android-bundle": "eas build --platform android",
     "ios": "expo start --ios",
     "ios-bundle": "eas build --platform ios",
+    "ios-deploy": "eas build --platform ios --profile production --auto-submit",
     "web": "expo start --web",
     "web-build": "expo build:web",
     "eject": "expo eject"
