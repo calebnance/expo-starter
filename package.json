@@ -20,6 +20,7 @@
     "ios": "expo start --ios",
     "ios-bundle": "eas build --platform ios",
     "ios-deploy": "eas build --platform ios --profile production --auto-submit",
+    "eas-update": "eas update --channel production",
     "web": "expo start --web",
     "web-build": "expo build:web",
     "eject": "expo eject"

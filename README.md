@@ -27,6 +27,12 @@ yarn
 yarn dev
 ```
 
+**Set up EAS**
+
+```bash
+eas update:configure
+```
+
 ## Features
 
 - Expo SDK 53
