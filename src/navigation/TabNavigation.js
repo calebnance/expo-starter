@@ -13,6 +13,9 @@ import SvgHome from '../icons/Svg.Home';
 import SvgMenu from '../icons/Svg.Menu';
 import SvgPlus from '../icons/Svg.Plus';
 
+// components
+import CustomTabBar from '../components/CustomTabBar';
+
 // context
 import Context from '../context';
 
@@ -27,6 +30,7 @@ function TabNavigation() {
 
   return (
     <Tab.Navigator
+      tabBar={(props) => <CustomTabBar {...props} />}
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarActiveTintColor: colors.itemActive,
