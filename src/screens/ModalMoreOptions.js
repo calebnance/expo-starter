@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
+import * as Haptics from 'expo-haptics';
 import { colors, device, gStyle, themes } from '../constants';
 
 // icons
@@ -29,6 +30,9 @@ function ModalMoreOptions({ navigation }) {
 
   // animate out, then navigate back
   const onClose = () => {
+    // haptic feedback
+    Haptics.selectionAsync();
+
     Animated.timing(bottom, {
       duration: animationDuration,
       toValue: bottomDefault,
